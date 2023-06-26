@@ -12,10 +12,10 @@ import { RippleModule } from 'primeng/ripple';
 import { AppMenuComponent } from './app.menu.component';
 import { AppMenuitemComponent } from './app.menuitem.component';
 import { RouterModule } from '@angular/router';
-import { AppTopBarComponent } from './app.topbar.component';
-import { AppFooterComponent } from './app.footer.component';
+import { AppTopBarComponent } from './common/topbar/app.topbar.component';
+import { AppFooterComponent } from './common/footer/app.footer.component';
 import { AppConfigModule } from './config/config.module';
-import { AppSidebarComponent } from "./app.sidebar.component";
+import { AppSidebarComponent } from "./common/sidebar/app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
 
 @NgModule({
