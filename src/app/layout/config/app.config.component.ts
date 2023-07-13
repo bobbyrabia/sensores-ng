@@ -60,6 +60,7 @@ export class AppConfigComponent {
 
     changeTheme(theme: string, colorScheme: string) {
         const themeLink = <HTMLLinkElement>document.getElementById('theme-css');
+        console.log(themeLink);
         const newHref = themeLink.getAttribute('href')!.replace(this.layoutService.config.theme, theme);
         this.layoutService.config.colorScheme
         this.replaceThemeLink(newHref, () => {
