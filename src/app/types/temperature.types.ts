@@ -1,5 +1,5 @@
 export interface Temperature {
-    id_payload?: string;
+    id_temperature?: string;
     received: Date;
     temperature: number;
 }

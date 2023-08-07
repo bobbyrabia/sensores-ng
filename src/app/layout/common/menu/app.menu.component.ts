@@ -28,14 +28,9 @@ export class AppMenuComponent implements OnInit {
                                 routerLink: ['general/']
                             },
                             {
-                                label: 'Presión atmosférica',
-                                icon: 'pi pi-fw pi-check-square',
-                                routerLink: ['node/atm-preassure']
-                            },
-                            {
-                                label: 'Dióxido de carbono',
-                                icon: 'pi pi-fw pi-cloud',
-                                routerLink: ['node/co2']
+                                label: 'Temperatura',
+                                icon: 'pi pi-fw pi-sun',
+                                routerLink: ['node/temp']
                             },
                             {
                                 label: 'Humedad',
@@ -43,9 +38,14 @@ export class AppMenuComponent implements OnInit {
                                 routerLink: ['node/hum']
                             },
                             {
-                                label: 'Temperatura',
-                                icon: 'pi pi-fw pi-sun',
-                                routerLink: ['node/temp']
+                                label: 'Presión barométrica',
+                                icon: 'pi pi-fw pi-check-square',
+                                routerLink: ['node/atm-preassure']
+                            },
+                            {
+                                label: 'Dióxido de carbono',
+                                icon: 'pi pi-fw pi-cloud',
+                                routerLink: ['node/co2']
                             },
                             {
                                 label: 'Velocidad del viento',

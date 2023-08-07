@@ -7,6 +7,7 @@ import {
 import {Co2MainComponent} from "./co2/pages/co2-main/co2-main.component";
 import {HumidityMainComponent} from "./humidity/pages/humidity-main/humidity-main.component";
 import {WindSpeedMainComponent} from "./wind-speed/pages/wind-speed-main/wind-speed-main.component";
+import { TemperatureMainComponent } from "./temperature/temperature-main/temperature-main.component";
 
 const routes:Routes=[
     {
@@ -22,7 +23,7 @@ const routes:Routes=[
         path:'hum', component:HumidityMainComponent
     },
     {
-        path:'temp', component:BarometricPreassureMainComponent
+        path:'temp', component:TemperatureMainComponent
     },
     {
         path:'wind', component:WindSpeedMainComponent
