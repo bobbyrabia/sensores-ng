@@ -11,11 +11,14 @@ import { EventService } from './core/service/event.service';
 import { IconService } from './core/service/icon.service';
 import { NodeService } from './core/service/node.service';
 import { PhotoService } from './core/service/photo.service';
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {JWTInterceptorInterceptor} from "./core/service/auth/jwtinterceptor.interceptor";
 
 @NgModule({
     declarations: [AppComponent, NotfoundComponent],
     imports: [AppRoutingModule, AppLayoutModule],
     providers: [
+        { provide: HTTP_INTERCEPTORS, useClass:JWTInterceptorInterceptor, multi:true},
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         CountryService,
         CustomerService,
