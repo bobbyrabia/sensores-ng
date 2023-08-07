@@ -8,14 +8,16 @@ import { LiveData } from 'src/app/types/live-data.types';
   styleUrls: ['./resume-main.component.scss']
 })
 export class ResumeMainComponent implements OnInit {
-
+  datas:LiveData[]=[];
   liveData: LiveData = {} as LiveData;
 
   constructor(private sensorsStorageDataService: SensorsStorageDataService) {}
 
   ngOnInit(): void {
     this.sensorsStorageDataService.getLiveData().subscribe(res => {
-      this.liveData = res;
+        this.datas=res;
+      this.liveData = this.datas[this.datas.length-1];
+        console.log(this.liveData)
     });
   }
 

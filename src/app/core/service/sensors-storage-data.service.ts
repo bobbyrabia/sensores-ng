@@ -9,7 +9,7 @@ import { Temperature } from 'src/app/types/temperature.types';
 import { environment } from 'src/environments/environment';
 
 const URL = environment.base_url_sensors;
-const BASE_URL_LIVE_DATA = URL + '/sensors/live-data';
+const BASE_URL_LIVE_DATA = URL + '/live-data';
 const BASE_URL_STORAGE_DATA = URL + '/sensors/storage-data';
 
 @Injectable({
@@ -35,7 +35,8 @@ export class SensorsStorageDataService {
     return this.http.get<BarometricPressure[]>(`${BASE_URL_STORAGE_DATA}/barometric-pressure`);
   }
 
-  public getLiveData(): Observable<LiveData> {
-    return this.http.get<LiveData>(`${BASE_URL_STORAGE_DATA}/barometric-pressure`);
+  public getLiveData(): Observable<LiveData[]> {
+
+    return this.http.get<LiveData[]>(`${BASE_URL_LIVE_DATA}`);
   }
 }
