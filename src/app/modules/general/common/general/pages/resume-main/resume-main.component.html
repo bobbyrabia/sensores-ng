@@ -9,7 +9,7 @@
                 <div>
                     <span class="block text-500 font-medium mb-3">Temperatura</span>
                     <div class="text-900 font-medium text-xl">
-                        {{ liveData?.payloadDecoded?.temperature_1 }}
+                        {{ liveData.payloadDecoded.temperature_1 }}
                     </div>
                 </div>
                 <div *ngIf="liveData != null && liveData.payloadDecoded != null && liveData.payloadDecoded.temperature_1 < 60" class="flex align-items-center justify-content-center bg-blue-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <span class="text-green-500 font-medium">
-                {{ liveData?.payloadDecoded?.temperature_1_week }} 
+                {{ liveData.payloadDecoded.temperature_1_week }}
             </span>
             <span class="text-500">promedio en la última semana</span>
         </div>
