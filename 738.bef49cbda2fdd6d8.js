@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksakai_ng=self.webpackChunksakai_ng||[]).push([[738],{5738:(d,s,e)=>{e.r(s),e.d(s,{DroneModule:()=>r});var o=e(1180),u=e(6895),_=e(8256);let r=(()=>{class n{}return(0,o.Z)(n,"\u0275fac",function(a){return new(a||n)}),(0,o.Z)(n,"\u0275mod",_.oAB({type:n})),(0,o.Z)(n,"\u0275inj",_.cJS({imports:[u.ez]})),n})()}}]);
